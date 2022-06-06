@@ -30,6 +30,14 @@
         <servlet-name>CreateCategory</servlet-name>
         <url-pattern>/admin/category/create</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ListCategory</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.category.ListCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCategory</servlet-name>
+        <url-pattern>/admin/category/list</url-pattern>
+    </servlet-mapping>
 <!-- Product  -->
     <servlet>
         <servlet-name>ProductCreate</servlet-name>
@@ -47,6 +55,49 @@
         <servlet-name>ListProduct</servlet-name>
         <url-pattern>/admin/product/list</url-pattern>
     </servlet-mapping>
+<!--shopping cart-->
+    <servlet>
+        <servlet-name>ListProductClient</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.product.client.ListProductClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListProductClient</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AddCart</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.shoppingCart.AddCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCart</servlet-name>
+        <url-pattern>/shopping-cart/add</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RemoveCart</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.shoppingCart.RemoveCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveCart</servlet-name>
+        <url-pattern>/shopping-cart/remove</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCart</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.shoppingCart.GetCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCart</servlet-name>
+        <url-pattern>/shopping-cart/get</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubCart</servlet-name>
+        <servlet-class>com.example.baitapcrud.controller.shoppingCart.SubCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubCart</servlet-name>
+        <url-pattern>/shopping-cart/sub</url-pattern>
+    </servlet-mapping>
 </web-app>

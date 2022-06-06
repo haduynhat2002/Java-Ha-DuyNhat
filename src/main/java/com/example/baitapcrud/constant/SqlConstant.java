@@ -20,15 +20,6 @@ public class SqlConstant {
     public static final String PRODUCT_DELETE = "update products set status = ? where id = ?";
     public static final String PRODUCT_SELECT_ALL = "select * from products where status = ?";
     public static final String PRODUCT_SELECT_BY_ID = "select * from products where status = ? and id = ?";
-    public static final String PRODUCT_SELECT_BY_NAME = "select * from products where status = ? and name = ?";
-
-
-    public static final String ACCOUNT_FIELD_ID = "id";
-    public static final String ACCOUNT_FIELD_USERNAME = "username";
-    public static final String ACCOUNT_FIELD_EMAIL = "email";
-    public static final String ACCOUNT_FIELD_PASSWORD = "password";
-    public static final String ACCOUNT_FIELD_STATUS = "status";
-    public static final String ACCOUNT_FIELD_FULLNAME = "fullName";
 
     public static final String CATEGORY_FIELD_ID = "id";
     public static final String CATEGORY_FIELD_NAME = "name";

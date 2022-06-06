@@ -17,12 +17,20 @@ public class Product extends BaseEntity {
 
     public Product() {
         this.setName("");
+        this.setThumbnail("");
+        this.setDetail("");
+        this.setDescription("");
         this.setPrice(0);
         this.setCreatedAt(LocalDateTime.now());
         this.setUpdatedAt(LocalDateTime.now());
         this.setCreatedBy(0);
         this.setUpdatedBy(0);
         this.setStatus(ProductStatus.ACTIVE);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s - %s - %f", this.id, this.name, this.price);
     }
 
     public Product(int id, String name, String thumbnail, double price, int categoryId, String description, String detail) {

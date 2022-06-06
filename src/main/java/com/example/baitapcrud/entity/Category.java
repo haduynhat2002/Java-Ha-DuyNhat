@@ -12,10 +12,12 @@ public class Category extends BaseEntity {
     private CategoryStatus status;
 
     public Category() {
+        this.setName("");
         this.setCreatedAt(LocalDateTime.now());
         this.setUpdatedAt(LocalDateTime.now());
         this.setCreatedBy(0);
         this.setUpdatedBy(0);
+        this.setStatus(CategoryStatus.ACTIVE);
     }
 
 
@@ -62,6 +64,10 @@ public class Category extends BaseEntity {
         }
     }
 
+    public HashMap<String, String> getErrors() {
+        return errors;
+    }
+
     public static final class CategoryBuilder {
         private int id;
         private String name;
@@ -74,25 +80,12 @@ public class Category extends BaseEntity {
         private int deletedBy;
 
         private CategoryBuilder() {
-            this.setCreatedAt(LocalDateTime.now());
-            this.setUpdatedAt(LocalDateTime.now());
-            this.setCreatedBy(0);
-            this.setUpdatedBy(0);
-        }
-
-        private void setUpdatedBy(int i) {
-        }
-
-        private void setCreatedBy(int i) {
-            
-        }
-
-        private void setUpdatedAt(LocalDateTime now) {
-            
-        }
-
-        private void setCreatedAt(LocalDateTime now) {
-            
+            this.name = "";
+            this.createdAt = LocalDateTime.now();
+            this.updatedAt = LocalDateTime.now();
+            this.createdBy = 0;
+            this.updatedBy = 0;
+            this.status = CategoryStatus.ACTIVE;
         }
 
         public static CategoryBuilder aCategory() {
@@ -158,5 +151,4 @@ public class Category extends BaseEntity {
             return category;
         }
     }
-    
 }

@@ -89,7 +89,6 @@ public class MySqlCategoryModel implements CategoryModel{
         return listObj;
     }
 
-
     @Override
     public Category findById(int id) {
         try {
