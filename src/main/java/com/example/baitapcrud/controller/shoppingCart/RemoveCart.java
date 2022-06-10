@@ -3,7 +3,7 @@ package com.example.baitapcrud.controller.shoppingCart;
 import com.example.baitapcrud.entity.ShoppingCart;
 import com.example.baitapcrud.model.MySqlProductModel;
 import com.example.baitapcrud.model.ProductModel;
-import com.example.baitapcrud.util.ShoppingCartHelper;
+import com.example.baitapcrud.service.ShoppingCartHelper;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

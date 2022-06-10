@@ -8,6 +8,13 @@ public class SqlConstant {
     public static final String ACCOUNT_SELECT_BY_USERNAME = "select * from accounts where status = ? and username = ?";
     public static final String ACCOUNT_UPDATE = "update accounts set username = ?, password = ?, fullName = ?, createdAt = ?, updatedAt = ?, createdBy = ?, updatedBy = ?, status = ? where id = ?";
     public static final String ACCOUNT_DELETE = "update accounts set status = ? where id = ?";
+    public static final String ACCOUNT_FIELD_ID = "id";
+    public static final String ACCOUNT_FIELD_USERNAME = "username";
+
+    public static final String ACCOUNT_FIELD_EMAIL = "email";
+    public static final String ACCOUNT_FIELD_PASSWORD = "password";
+    public static final String ACCOUNT_FIELD_STATUS = "status";
+    public static final String ACCOUNT_FIELD_FULLNAME = "fullName";
 
     public static final String CATEGORY_INSERT = "insert into categories (name, createdAt, updatedAt, createdBy, updatedBy, status) values (?,?,?,?,?,?)";
     public static final String CATEGORY_UPDATE = "update categories set name = ?, updatedAt = ?, updatedBy = ?, status = ? where id = ?";

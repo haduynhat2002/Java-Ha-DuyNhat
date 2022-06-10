@@ -1,14 +1,12 @@
 package com.example.baitapcrud.model;
 
 import com.example.baitapcrud.constant.SqlConstant;
-import com.example.baitapcrud.entity.Category;
 import com.example.baitapcrud.entity.Product;
 import com.example.baitapcrud.entity.myenum.CategoryStatus;
 import com.example.baitapcrud.entity.myenum.ProductStatus;
-import com.example.baitapcrud.util.ConnectionHelper;
+import com.example.baitapcrud.service.ConnectionHelper;
 
 
-import java.math.BigDecimal;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

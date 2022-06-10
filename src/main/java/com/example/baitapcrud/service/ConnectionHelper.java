@@ -1,4 +1,4 @@
-package com.example.baitapcrud.util;
+package com.example.baitapcrud.service;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

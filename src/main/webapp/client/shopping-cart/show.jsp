@@ -1,5 +1,5 @@
 <%@ page import="com.example.baitapcrud.entity.ShoppingCart" %>
-<%@ page import="com.example.baitapcrud.util.ShoppingCartHelper" %>
+<%@ page import="com.example.baitapcrud.service.ShoppingCartHelper" %>
 <%@ page import="com.example.baitapcrud.entity.CartItem" %>
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.text.NumberFormat" %><%--
@@ -85,8 +85,8 @@
                                     <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
                                     <hr class="my-4">
 
-                                    <div class="d-flex justify-content-between mb-5">
-                                        <h5 class="text-uppercase">Total price</h5>
+                                    <div class="justify-content-between mb-5">
+                                        <h5 class="text-uppercase">Total price:</h5>
                                         <h5> <%=nf.format(shoppingCart.getTotalPrice())%></h5>
                                     </div>
 
